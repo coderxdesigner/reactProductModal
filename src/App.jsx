@@ -1,24 +1,15 @@
+import ContainerPop from "./Container"
 
 function App() {
 
   return (
     <>
-      <div className="container">
+      <div className="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
        <ContainerPop />
       </div>
     </>
   )
 }
 
-function ContainerPop() {
-  return (
-    <div className="modalCustom">
-      <div className="row">
-      <div className="col-6">Side 1</div>
-      <div className="col-6">Side 2 </div>
-      </div>
-    </div>
-  )
-}
 
 export default App
