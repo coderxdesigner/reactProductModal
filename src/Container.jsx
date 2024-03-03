@@ -1,4 +1,4 @@
-import Header from "./Header"
+import CloseBtn from "./CloseBtn"
 import ProductTabs from "./ProductTabs"
 import ProductImages from "./ProductImages"
 import ProductDetails from "./ProductDetails"
@@ -6,13 +6,13 @@ import ProductDetails from "./ProductDetails"
 function ContainerPop() {
     return (
       <div className="modalCustom container">
-        <Header />
         <div className="row">
         <div className="col-6">
             <ProductImages />
             <ProductTabs />
         </div>
-        <div className="col-6">
+        <div className="col-6 right">
+            <CloseBtn />
             <ProductDetails />
         </div>
         </div>
