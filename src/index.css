@@ -6,9 +6,27 @@ body {
 .modalCustom {
   background-color: #fff;
   border-radius:6px;
-  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,.3);
-  -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,.3);
-  box-shadow: 0px 0px 10px 3px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,.2);
+  -moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,.2);
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,.2);
+}
+.svgWrapper {
+  position:relative;
+}
+.customBtn {
+  cursor: pointer;
+  height:30px;
+  width:30px;
+  position:absolute;
+  right:6px;
+  top:15px;
+}
+.customBtn > svg > path {
+  fill:#ccc;
+  transition:all 350ms ease-in-out;
+}
+.customBtn:hover > svg > path {
+  fill:#FFCD68;
 }
 p {
   color:#424242;
@@ -26,5 +44,6 @@ h1,h3,h4,h5,h6 {
   background-color: #E8EDEE;
 }
 .col-6.right {
-  background-color:#dee4e7;
+  background-color:#dee4e786;
+  border-radius:0px 6px;
 }
